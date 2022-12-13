@@ -5,7 +5,13 @@ tabela {
     width: 100%;
   }
 
-  
+  td,
+  dentro {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
   div {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -18,12 +24,7 @@ tabela {
     background-color: rgb(236, 236, 236);
 }
   
-  td,
-  th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
+ 
   
  
   
