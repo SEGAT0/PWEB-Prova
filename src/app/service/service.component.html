@@ -6,11 +6,11 @@
             <th>Titulo</th>
             <th>Completed</th>
         </tr>
-        <tr *ngFor="let Todos of todo">
-            <td>{{Todos.userId}}</td>
-            <td>{{Todos.id}}</td>
-            <td>{{Todos.title}}</td>
-            
+        <tr *ngFor="let Servicex of todo">
+            <td>{{Servicex.userId}}</td>
+            <td>{{Servicex.id}}</td>
+            <td>{{Servicex.title}}</td>
+            <td><input type="checkbox" name="" id=""[checked]="Servicex.completed"/></td>
         </tr>
     </table>
 </div>
