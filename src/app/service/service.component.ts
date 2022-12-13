@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AService } from '../service';
+import { ServiceLink } from './../service.service';
+
 
 @Component({
   selector: 'app-service',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
+  todo: AService[]=[]; //criando uma propriedade que pode ou não ser obrigatório que trás a nossa interface
+
+  constructor(private serviceLink: ServiceLink) { } //injetando no construtor o nosso serviço
+
   constructor() { }
 
   ngOnInit(): void {
+    this.serviceService.ObserTodos()
+      .subscribe(inter => this.user = inter);
   }
+}
+
 
 }
