@@ -1,4 +1,4 @@
-import { AService } from './service';//interface importada do arquivo ts
+import { AService } from './todo';//interface importada do arquivo ts
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceLink {
+export class TodoLink {
 
   private usersURL =  'https://jsonplaceholder.typicode.com/todos';
 
