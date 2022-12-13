@@ -14,13 +14,11 @@ export class ServiceComponent implements OnInit {
 
   constructor(private serviceLink: ServiceLink) { } //injetando no construtor o nosso serviço
 
-  constructor() { }
-
   ngOnInit(): void {
-    this.serviceService.ObserTodos()
-      .subscribe(inter => this.user = inter);
+    this.serviceLink.ObserTodos()
+      .subscribe(inter => this.todo = inter);
   }
 }
 
 
-}
+

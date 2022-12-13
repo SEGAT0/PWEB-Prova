@@ -14,7 +14,7 @@ export class ServiceLink {
   constructor(private http: HttpClient) { }
 
    //trazendo os valores de nossa interface com o observable que está no array por um injetavel. Com o observable estamos tornando nossa chamada assíncrona
-  ObserUsers(): Observable<AService[]>{
+  ObserTodos(): Observable<AService[]>{
     return this.http.get<AService[]>(this.usersURL);
   }
 }

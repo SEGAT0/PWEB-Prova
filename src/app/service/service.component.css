@@ -1,5 +1,5 @@
 h2{
-    color:  rgb(213, 208, 208);
+    color:  rgb(0, 0, 0);
     font-weight: 700;
 
     font-size: 30px;
@@ -7,14 +7,14 @@ h2{
     margin-left: 70px;
 }
 
-.data{
+.dado{
     display: flex;
     flex-direction: row;
 
     padding: 2rem;
 }
 
-table{
+tabela{
     color:  rgb(252, 252, 252);
 
     background: #141414;
